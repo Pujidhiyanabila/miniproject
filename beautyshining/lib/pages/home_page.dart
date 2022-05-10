@@ -1,3 +1,4 @@
+import 'package:beautyshining/pages/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -61,12 +62,22 @@ class _HomePageState extends State<HomePage> {
     final prov = Provider.of<Products>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text("All Products"),
+        title: Text("Beauty Shining"),
+        centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.add),
-            // icon: Icon(Icons.account_circle),
-            onPressed: () => Navigator.pushNamed(context, AddProductPage.route),
+            onPressed: (){
+              showModalBottomSheet(
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(20),
+                  ),
+                ),
+                context: context, 
+                builder: (context) => const ProfilePage(),
+              );
+            },
+            icon: Icon(Icons.account_circle),
           ),
         ],
       ),

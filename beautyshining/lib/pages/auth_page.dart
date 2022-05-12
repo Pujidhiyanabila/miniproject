@@ -1,7 +1,7 @@
+import 'package:beautyshining/widgets/bottom_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:provider/provider.dart';
-import 'package:beautyshining/pages/home_page.dart';
 import 'package:beautyshining/providers/auth.dart';
 
 const users = const {
@@ -78,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
       onSignup: _authUserSignUp,
       onSubmitAnimationCompleted: () {
         Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => HomePage(),
+          builder: (context) => BottomNavigation(),
         ));
       },
       onRecoverPassword: _recoverPassword,

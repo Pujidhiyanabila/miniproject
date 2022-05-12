@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         home: LoginPage(),
-        // routes: {
-        //   AddProductPage.route: (ctx) => AddProductPage(),
-        //   EditProductPage.route: (ctx) => EditProductPage(),
-        // },
+        routes: {
+          // AddProductPage.route: (ctx) => AddProductPage(),
+          // EditProductPage.route: (ctx) => EditProductPage(),
+        },
       ),
     );
   }

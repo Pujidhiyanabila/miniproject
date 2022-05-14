@@ -1,5 +1,4 @@
 import 'package:beautyshining/common/style.dart';
-import 'package:beautyshining/providers/api_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:beautyshining/pages/drawer_page.dart';
